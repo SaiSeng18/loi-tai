@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="body">
         {card.map((card) => (
-          <div className="card">
+          <div className="card" key={card.header}>
             <p>{card.header}</p>
             <div className="img-container">
               <Image src={card.image} alt="image" layout='fill' objectFit="cover" />

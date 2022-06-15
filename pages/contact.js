@@ -15,7 +15,7 @@ const contact = () => {
 			</div>
 
 			<div className='faq'>
-				<p>'IF THERE IS ANY QUESTION, PLEASE FEEL FREE TO MESSAGE US DIRECTLY THROUGH SOCIAL MEDIA'</p>
+				<p>&apos;IF THERE IS ANY QUESTION, PLEASE FEEL FREE TO MESSAGE US DIRECTLY THROUGH SOCIAL MEDIA&apos;</p>
 			</div>
 		</div>
 	)
