@@ -77,6 +77,35 @@ a {
 			border-left: 2px solid white;
 			transition: all 0.3s ease;
 		}
+
+		@media screen and (max-width: 769px) {
+			display: none;
+		}
+	}
+
+	.burger-menu {
+		
+		position: absolute;
+		display: block;
+		right: 0;
+		top: 0;
+		background: white;
+		margin-top: 40px;
+
+		li {
+			list-style: none;
+			text-decoration: none;
+			position: relative;
+			text-align: right;
+			font-size: 13px;
+		}
+
+		li ul li{
+			background: black;
+			z-index: 2;
+			text-align: right;
+			font-size: 25px;
+		}
 	}
 }
 
