@@ -1,0 +1,227 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background-color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	background: black;
+	color: white;
+	text-align: center;
+	align-items: center;
+	
+	.menu {
+		display: flex;
+
+		li {
+			list-style: none;
+			display: flex;
+			padding: 0 30px;
+			position: relative;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		li ul {
+			visibility: hidden;
+			opacity: 0;
+			position: absolute;
+			padding-left: 0;
+			left: 0;
+			display: none;
+			background: black;
+			z-index: 2;
+		}
+
+		li:hover > ul,
+		li ul:hover {
+			top: 5px;
+			visibility: visible;
+			opacity: 1;
+			display: block;
+			min-width: 250px;
+			text-align: left;
+			padding-top: 10px;
+		}
+
+		li ul li {
+			clear: both;
+			width: 100%;
+			text-align: left;
+			margin-bottom: 20px;
+			border-style: none;
+			font-size: 12px;
+		}
+
+		li ul li a:hover {
+			padding-left: 10px;
+			border-left: 2px solid white;
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+.cart {
+	width: 10px;
+	height: 1px;
+	background: white;
+}
+
+.divider {
+	width: 98%;
+	margin: auto;
+	height: 1px;
+	background: white;
+	border-radius: 50%;
+}
+
+// Home
+
+.body {
+	width: 100%;
+	min-height: 100vh;
+	padding: 20px;
+	background: black;
+}
+
+.card {
+	width: 350px;
+	height: 500px;
+	margin: auto;
+	margin-top: 30px;
+
+	p {
+		color: white;
+	}
+
+	.img-container {
+		width: 350px;
+		height: 420px;
+		position: relative;
+		border: 1px solid white;
+	}
+}
+
+// Stockist
+
+.stockist {
+	position: relative;
+
+	h1 {
+		color: white;
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: white;
+		margin: 0;
+	}
+
+	div h1 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+}
+
+// Footer
+
+.footer {
+	width: 100%;
+	color: white;
+	position: relative;
+
+	.footer-logo {
+		width: 100px;
+		height: 100px;
+		position: relative;
+		display: block;
+		margin-right:0;
+		margin-left: auto;
+		display: block;
+	}
+
+	.footer-content {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 50px 20px;
+
+		a	{
+			display: block;
+			padding-bottom: 10px;
+		}
+	}
+
+	.size-guide {
+		text-align: left;
+	}
+
+	.social-media {
+		text-align: right; 
+	}
+}
+
+// Contact
+
+.contact {
+	position: relative;
+
+	h1 {
+		color: white;
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: white;
+		margin: 0;
+	}
+
+	div h1 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	
+	.faq {
+		width: 100%;
+		margin: auto;
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+	}
+}
+
+// Size Guide
+
+.sizeguide {
+	h1 {
+		color: white;
+		font-size: 18px;
+	}
+
+	div p {
+		color: white;
+		font-size: 18px;
+		margin: 0;
+	}
+}
