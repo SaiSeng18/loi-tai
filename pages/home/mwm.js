@@ -2,7 +2,7 @@ import React from 'react'
 
 const mwm = () => {
   return (
-	<div>mwm</div>
+	<div className="body">mwm</div>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const archive = () => {
   return (
-	<div>archive</div>
+	<div className="body">archive</div>
   )
 }
 

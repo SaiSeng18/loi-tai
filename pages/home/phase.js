@@ -2,7 +2,7 @@ import React from 'react'
 
 const phase = () => {
   return (
-	<div>phase</div>
+	<div className="body">phase</div>
   )
 }
 

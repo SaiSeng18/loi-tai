@@ -14,12 +14,12 @@ const Footer = () => {
           <Link href="/contact"><a>CONTACT</a></Link>
         </div>
         <div className="social-media">
-          <Link href="/"><a>INSTAGRAM</a></Link>
-          <Link href="/"><a>FACEBOOK</a></Link>
-          <Link href="/"><a>MESSENGER</a></Link>
+          <a href="https://www.instagram.com/loitai.ygn/" target="_blank">INSTAGRAM</a>
+          <a href="https://www.facebook.com/loitaigear/" target="_blank">FACEBOOK</a>
+          <a href="https://www.facebook.com/messages/t/104076485439964" target="_blank">MESSENGER</a>
         </div>
       </div>
-      <div className="copyrights"></div>
+      <div className="copyrights">&copy;2022 All Rights Reserved LOITAI</div>
     </div>
   )
 }

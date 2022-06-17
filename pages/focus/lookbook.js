@@ -2,7 +2,7 @@ import React from 'react'
 
 const lookbook = () => {
   return (
-	<div>lookbook</div>
+	<div className="body">lookbook</div>
   )
 }
 
