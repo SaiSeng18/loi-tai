@@ -14,9 +14,9 @@ const Footer = () => {
           <Link href="/contact"><a>CONTACT</a></Link>
         </div>
         <div className="social-media">
-          <a href="https://www.instagram.com/loitai.ygn/" target="_blank">INSTAGRAM</a>
-          <a href="https://www.facebook.com/loitaigear/" target="_blank">FACEBOOK</a>
-          <a href="https://www.facebook.com/messages/t/104076485439964" target="_blank">MESSENGER</a>
+          <a href="https://www.instagram.com/loitai.ygn/" target="_blank" rel="noreferrer">INSTAGRAM</a>
+          <a href="https://www.facebook.com/loitaigear/" target="_blank" rel="noreferrer">FACEBOOK</a>
+          <a href="https://www.facebook.com/messages/t/104076485439964" target="_blank" rel="noreferrer">MESSENGER</a>
         </div>
       </div>
       <div className="copyrights">&copy;2022 All Rights Reserved LOITAI</div>
