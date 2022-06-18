@@ -110,6 +110,11 @@ a {
 			font-size: 25px;
 		}
 
+		.home-page {
+			text-align: right;
+			font-size: 25px;
+		}
+
 		@media screen and (min-width: 769px) {
 			display: none;
 		}
@@ -146,20 +151,22 @@ a {
 }
 
 .card {
-	width: 350px;
+	width: 320px;
 	height: 500px;
 	margin: auto;
 	margin-top: 30px;
+	text-align: center;
 
 	p {
 		color: white;
 	}
 
 	.img-container {
-		width: 350px;
+		width: 320px;
 		height: 420px;
 		position: relative;
 		border: 1px solid white;
+		margin: auto;
 	}
 }
 

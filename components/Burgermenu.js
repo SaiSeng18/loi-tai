@@ -6,7 +6,7 @@ const Burgermenu = ({handleToggle}) => {
 	<div className="burger-menu">
 		
 		<li>
-			<div onClick={handleToggle}>cross</div>
+			
 			<Link href="/"><a onClick={handleToggle}>HOME</a></Link>
 			<ul>
 				<li><Link href="/home/phase"><a onClick={handleToggle}>PHASE-01</a></Link></li>
@@ -40,6 +40,7 @@ const Burgermenu = ({handleToggle}) => {
 				<li><Link href="/extra/terms"><a onClick={handleToggle}>TERMS</a></Link></li>
 			</ul>
 		</li>
+		<div onClick={handleToggle} className="home-page">HOME PAGE</div>
 	</div>
   )
 }
