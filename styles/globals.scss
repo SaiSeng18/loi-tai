@@ -120,7 +120,7 @@ a {
 			font-size: 25px;
 		}
 
-		@media screen and (min-width: 820px) {
+		@media screen and (min-width: 821px) {
 			display: none;
 		}
 	}
@@ -132,7 +132,7 @@ a {
 	.menu-icon {
 		padding-left: 10px;	
 		
-		@media screen and (min-width: 820px) {
+		@media screen and (min-width: 821px) {
 			display: none;
 		}
 	}
@@ -156,46 +156,113 @@ a {
 }
 
 .card {
-	width: 80%;
-	height: 500px;
+	width: 100%;
+	height: 700px;
 	margin: auto;
-	margin-top: 30px;
 	text-align: left;
+	padding: 20px;
 	justify-content: center;
 	display: flex;
+
+	@media screen and (max-width: 1024px) {
+		display: block;
+		padding: 0;
+	}
 
 	.content-container {
 		width: 50%;
 		color: var(--secondary-color);
 		padding: 50px;
+		position: relative;
+
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			height: 200px;
+			padding: 0;
+			margin-bottom: 10px;
+		}
+
+		a {
+			position: absolute;
+			bottom: 0;
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+			overflow: hidden;
+			padding-right: 20px;
+			padding-bottom: 5px;
+			margin-bottom: 50px;
+
+			@media screen and (max-width: 1024px) {
+				margin-bottom: 0;
+			}
+		
+		}
+
+		a::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 0.1em;
+			background-color: var(--secondary-color);
+			opacity: 0;
+			transition: opacity 300ms, transform 300ms;
+		}
+
+		a::after {
+			opacity: 1;
+			transform: translate3d(-100%, 0, 0);
+		}
+		
+		a:hover::after,
+		a:focus::after{
+			transform: translate3d(0, 0, 0);
+		}
+		
 	}
 
 	.img-container {
-		width: 50%;
+		width: 600px;
+		
 		padding: 20px;
 		position: relative;
+
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			height: 400px;
+
+		}
 	}
 
 	.image-1 {
 		width: 50%;
 		height: 420px;
 		padding: 20px;
-		z-index: 1;
-		position: absolute;
-		top: 0;
-		right: 0;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+		
+
+		@media screen and (min-width: 1024px) {
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+		}
 	}
 
 	.image-2 {
 		width: 50%;
 		height: 420px;
 		padding: 20px;
-		z-index: 2;
-		position: absolute;
-		bottom: 0;
-		left: 2;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+		@media screen and (min-width: 1024px) {
+			z-index: 2;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+		}
 	}
 
 }

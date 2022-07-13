@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { images } from '../src/img'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import { images } from '../src/img';
+import Link from 'next/link';
 
 export default function Home() {
   const card = [
@@ -17,7 +18,8 @@ export default function Home() {
           <div className="card" key={card.header}>
             <div className="content-container">
               <p className="content">{card.header}</p>
-              <button>Visit Link</button>
+              <Link href="/shop"><a>Visit Link</a></Link>
+              
             </div>
             
             <div className="img-container">

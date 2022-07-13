@@ -16,7 +16,7 @@ const Navbar = () => {
 			<Link href="/"><div className="img-container"><Image src={images.loitai} alt="image" ></Image></div></Link>
 			<div className="menu">
 				<li>
-					<Link href="/"><a>HOME</a></Link>
+					<Link href=""><a>HOME</a></Link>
 					<ul>
 						<li><Link href="/home/phase"><a>PHASE-01</a></Link></li>
 						<li><Link href="/home/vss1"><a>LOI TAI X VLONE - VSS1</a></Link></li>
