@@ -17,6 +17,7 @@ export default function Home() {
           <div className="card" key={card.header}>
             <div className="content-container">
               <p className="content">{card.header}</p>
+              <button>Visit Link</button>
             </div>
             
             <div className="img-container">
