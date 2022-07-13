@@ -5,20 +5,29 @@ import { images } from '../src/img'
 
 export default function Home() {
   const card = [
-    {header: "something", image: images.img1},
-    {header: "hello", image: images.img2},
-    {header: "world", image: images.img3},
-    {header: "eg", image: images.img4},
+    {header: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis fugiat. Ipsum recusandae expedita impedit nisi hic quasi consectetur vitae, inventore debitis ipsam consequuntur, at quia laudantium. Soluta, deserunt vero!", image_1: images.img1 , image_2: images.img3},
+    {header: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis fugiat. Ipsum recusandae expedita impedit nisi hic quasi consectetur vitae, inventore debitis ipsam consequuntur, at quia laudantium. Soluta, deserunt vero!", image_1: images.img2 , image_2: images.img4},
+    {header: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis fugiat. Ipsum recusandae expedita impedit nisi hic quasi consectetur vitae, inventore debitis ipsam consequuntur, at quia laudantium. Soluta, deserunt vero!", image_1: images.img3 , image_2: images.img1},
+    {header: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis fugiat. Ipsum recusandae expedita impedit nisi hic quasi consectetur vitae, inventore debitis ipsam consequuntur, at quia laudantium. Soluta, deserunt vero!", image_1: images.img4 , image_2: images.img2},
   ]
 
   return (
     <div className="body">
         {card.map((card) => (
           <div className="card" key={card.header}>
-            <p>{card.header}</p>
-            <div className="img-container">
-              <Image src={card.image} alt="image" layout='fill' objectFit="cover" />
+            <div className="content-container">
+              <p className="content">{card.header}</p>
             </div>
+            
+            <div className="img-container">
+              <div className="image-1">
+                <Image src={card.image_1} alt="image" layout='fill' objectFit="cover" />
+              </div>
+              <div className="image-2">
+                <Image src={card.image_2} alt="image" layout='fill' objectFit="cover" />
+              </div>
+            </div>
+            
           </div>
         ))}
     </div>
