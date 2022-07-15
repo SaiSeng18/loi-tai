@@ -11,8 +11,9 @@ const Layout = ({children}) => {
 			<Navbar/>
 			<div className="divider"></div>
 				{children}
-			<div className="footer-logo" onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }}><Image src={images.logomark} alt="image" layout='fill' objectFit="cover" className="logomark"/></div>
+			<div className="footer-logo" onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
+				<Image src={images.logomark} alt="image" layout='fill' objectFit="cover" className="logomark"/>
+			</div>
 			<Footer/>
 		</div>
 	)
