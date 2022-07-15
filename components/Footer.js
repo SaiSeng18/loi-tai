@@ -6,7 +6,7 @@ import images from '../src/img/images'
 const Footer = () => {
   return (
 	  <div className="footer">
-      <div className="footer-logo"><Image src={images.logomark} alt="image" layout='fill' objectFit="cover" className="logomark"/></div>
+      
       <div className="divider"></div>
       <div className="footer-content">
         <div className="size-guide">
