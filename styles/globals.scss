@@ -26,7 +26,7 @@ a {
 	height: 40px;
 	display: flex;
 	justify-content: space-between;
-	padding: 2rem;
+	padding: 30px 20px;
 	background: var(--primary-color);
 	color: var(--secondary-color);
 	text-align: center;
@@ -131,7 +131,6 @@ a {
 
 	.menu-icon {
 		padding-left: 10px;
-		margin-right: -20px;
 		
 		@media screen and (min-width: 821px) {
 			display: none;
