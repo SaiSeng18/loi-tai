@@ -4,5 +4,8 @@ import img3 from './3.jpg';
 import img4 from './4.jpg';
 import loitai from './LOI TAI.svg';
 import logomark from './LT logomark.svg';
+import cart from './cart.svg';
+import menu from './menu.svg';
 
-export default {img1, img2, img3, img4, loitai, logomark};
+
+export default {img1, img2, img3, img4, loitai, logomark, cart, menu};

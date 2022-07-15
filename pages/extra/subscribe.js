@@ -3,10 +3,12 @@ import React from 'react'
 const subscribe = () => {
   return (
 	<div className="body">
-    <div className="subscribe">
-      <p>EMAIL ADDRESS</p>
-      <div>
-        <button>SUBSCRIBE</button>
+    <div className="flex">
+      <div className="subscribe">
+        <input type="email" id="email" placeholder="EMAIL ADDRESS"/>
+        <div>
+          <button>SUBSCRIBE</button>
+        </div>
       </div>
     </div>
   </div>

@@ -52,8 +52,8 @@ const Navbar = () => {
 			</div>
 
 			<div className="shop">
-				<div className="cart">cart</div>
-				{toggle ? <div className="menu-icon" onClick={handleToggle}>click</div> : <Burgermenu handleToggle={handleToggle} />}
+				<div className="cart-img"><Image src={images.cart} alt="cart"></Image></div>
+				{toggle ? <div className="menu-icon" onClick={handleToggle}><Image src={images.menu} alt="menu"></Image></div> : <Burgermenu handleToggle={handleToggle} />}
 			</div>
 		</nav>
 	)
