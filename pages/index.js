@@ -14,6 +14,8 @@ export default function Home() {
 
   return (
     <div className="body">
+        <div className="main-vid"></div>
+
         {card.map((card) => (
           <div className="card" key={card.header}>
             <div className="content-container">

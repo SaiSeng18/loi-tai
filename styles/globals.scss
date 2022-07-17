@@ -96,7 +96,7 @@ a {
 		right: 0;
 		top: 0;
 		background: var(--primary-color);
-		z-index: 10;
+		z-index: 11;
 		padding: 20px;
 
 		li {
@@ -160,7 +160,18 @@ a {
 	position: relative;
 }
 
+.main-vid {
+	height: 90vh;
+	width: 100%;
+	background-image: url(../src/img/loitai.gif);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
+	@media screen and (max-width: 821px) {
+		height: 50vh;
+	}
+}
 
 .card {
 	width: 100%;
@@ -171,7 +182,7 @@ a {
 	justify-content: center;
 	display: flex;
 	border-radius: 5px;
-	background-color: rgba(100, 100, 100, 0.1);
+	background-color: rgba(150, 150, 150, 0.1);
 	margin-bottom: 20px;
 
 	@media screen and (max-width: 1024px) {
@@ -326,7 +337,7 @@ a {
 	margin-right: 0;
 	margin-left: auto;
 	bottom: 0;
-	z-index: 99;
+	z-index: 10;
 	border: 20px solid transparent;
 }
 
@@ -370,6 +381,7 @@ a {
 
 .contact {
 	position: relative;
+	
 
 	h1 {
 		color: var(--secondary-color);
@@ -388,11 +400,15 @@ a {
 	}
 	
 	.faq {
-		width: 100%;
+		width: 90%;
 		margin: auto;
 		position: absolute;
 		bottom: 0;
-		text-align: center;
+
+		p {
+			font-size: 18px;
+			text-align: center;
+		}
 	}
 }
 
