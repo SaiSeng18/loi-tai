@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { images } from '../src/img';
 import Link from 'next/link';
+import Hero from '../components/Hero';
 
 export default function Home() {
   const card = [
@@ -14,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="body">
-        <div className="main-vid"></div>
+        <Hero/>
 
         {card.map((card) => (
           <div className="card" key={card.header}>
