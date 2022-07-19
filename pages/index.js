@@ -4,38 +4,112 @@ import styles from '../styles/Home.module.css';
 import { images } from '../src/img';
 import Link from 'next/link';
 import Hero from '../components/Hero';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Autoplay, Pagination } from "swiper";
 
 export default function Home() {
-  const card = [
-    {header: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis fugiat. Ipsum recusandae expedita impedit nisi hic quasi consectetur vitae, inventore debitis ipsam consequuntur, at quia laudantium. Soluta, deserunt vero!", image_1: images.img1 , image_2: images.img3},
-    {header: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis fugiat. Ipsum recusandae expedita impedit nisi hic quasi consectetur vitae, inventore debitis ipsam consequuntur, at quia laudantium. Soluta, deserunt vero!", image_1: images.img2 , image_2: images.img4},
-    {header: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis fugiat. Ipsum recusandae expedita impedit nisi hic quasi consectetur vitae, inventore debitis ipsam consequuntur, at quia laudantium. Soluta, deserunt vero!", image_1: images.img3 , image_2: images.img1},
-    {header: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis fugiat. Ipsum recusandae expedita impedit nisi hic quasi consectetur vitae, inventore debitis ipsam consequuntur, at quia laudantium. Soluta, deserunt vero!", image_1: images.img4 , image_2: images.img2},
-  ]
 
   return (
     <div className="body">
         <Hero/>
 
-        {card.map((card) => (
-          <div className="card" key={card.header}>
-            <div className="content-container">
-              <p className="content">{card.header}</p>
-              <Link href="/shop"><a>Visit Link</a></Link>
-              
-            </div>
-            
-            <div className="img-container">
-              <div className="image-1">
-                <Image src={card.image_1} alt="image" layout='fill' objectFit="cover" />
+        <div className="card card-1">
+          <div className="content-container">
+            <p className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta qui vero culpa consequuntur optio at nobis architecto iste suscipit quam nam placeat eum voluptates cumque labore, fugiat laborum reiciendis.</p>
+            <Link href="/shop"><a>Visit Link</a></Link>
+          </div>
+          
+
+          <Swiper
+          direction={"vertical"}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="card-swiper"
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          >
+            <SwiperSlide>
+              <div className="swiper-img-container">
+                <Image src={images.white1} alt="image" layout='fill' objectFit="cover" />
               </div>
-              <div className="image-2">
-                <Image src={card.image_2} alt="image" layout='fill' objectFit="cover" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="swiper-img-container">
+                <Image src={images.white2} alt="image" layout='fill' objectFit="cover" />
               </div>
-            </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="swiper-img-container">
+                <Image src={images.white3} alt="image" layout='fill' objectFit="cover" />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="swiper-img-container">
+                <Image src={images.white4} alt="image" layout='fill' objectFit="cover" />
+              </div>
+            </SwiperSlide>
+
+          </Swiper>
+          
+        </div>
+
+        <div className="card card-2">
+
+          <Swiper
+          direction={"vertical"}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="card-swiper"
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          >
+            <SwiperSlide>
+              <div className="swiper-img-container">
+                <Image src={images.black1} alt="image" layout='fill' objectFit="cover" />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="swiper-img-container">
+                <Image src={images.black2} alt="image" layout='fill' objectFit="cover" />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="swiper-img-container">
+                <Image src={images.black3} alt="image" layout='fill' objectFit="cover" />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="swiper-img-container">
+                <Image src={images.black4} alt="image" layout='fill' objectFit="cover" />
+              </div>
+            </SwiperSlide>
+
+          </Swiper>
+
+          <div className="content-container">
+            <p className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta qui vero culpa consequuntur optio at nobis architecto iste suscipit quam nam placeat eum voluptates cumque labore, fugiat laborum reiciendis.</p>
+            <Link href="/shop"><a>Visit Link</a></Link>
             
           </div>
-        ))}
+        </div>
     </div>
   )
 }
