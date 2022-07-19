@@ -12,6 +12,7 @@ import "swiper/css";
 
 const Hero = () => {
   return (
+	<div className="hero">
 		<Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -34,6 +35,8 @@ const Hero = () => {
 				</div>
 			</SwiperSlide>
 		</Swiper>
+	</div>
+		
   )
 }
 

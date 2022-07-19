@@ -18,14 +18,8 @@ export default function Home() {
         <Hero/>
 
         <div className="card card-1">
-          <div className="content-container">
-            <p className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta qui vero culpa consequuntur optio at nobis architecto iste suscipit quam nam placeat eum voluptates cumque labore, fugiat laborum reiciendis.</p>
-            <Link href="/shop"><a>Visit Link</a></Link>
-          </div>
-          
-
           <Swiper
-          direction={"vertical"}
+          direction={"horizontal"}
           pagination={{
             clickable: true,
           }}
@@ -61,13 +55,18 @@ export default function Home() {
             </SwiperSlide>
 
           </Swiper>
+
+          <div className="content-container">
+            <p className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta qui vero culpa consequuntur optio at nobis architecto iste suscipit quam nam placeat eum voluptates cumque labore, fugiat laborum reiciendis.</p>
+            <Link href="/shop"><a>Visit Links</a></Link>
+          </div>
           
         </div>
 
         <div className="card card-2">
 
           <Swiper
-          direction={"vertical"}
+          direction={"horizontal"}
           pagination={{
             clickable: true,
           }}
