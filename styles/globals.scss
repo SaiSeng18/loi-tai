@@ -228,7 +228,7 @@ a {
 		display: block;
 	}
 
-	.swiper {
+	.swiper-slide {
 		height: 600px;
 	}
 
@@ -307,9 +307,19 @@ a {
 }
 
 .card-1 {
+	.swiper-pagination-bullet {
+		background-color: var(--primary-color);
+	}
+
 	@media screen and (max-width: 1024px) {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+}
+
+.card-2 {
+	.swiper-pagination-bullet {
+		background-color: var(--secondary-color);
 	}
 }
 

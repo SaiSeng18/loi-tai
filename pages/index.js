@@ -38,25 +38,25 @@ export default function Home() {
           >
             <SwiperSlide>
               <div className="swiper-img-container">
-                <Image src={images.white1} alt="image" layout='fill' objectFit="cover" />
+                <Image src={images.black1} alt="image" layout='fill' objectFit="cover" />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="swiper-img-container">
-                <Image src={images.white2} alt="image" layout='fill' objectFit="cover" />
+                <Image src={images.black2} alt="image" layout='fill' objectFit="cover" />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="swiper-img-container">
-                <Image src={images.white3} alt="image" layout='fill' objectFit="cover" />
+                <Image src={images.black3} alt="image" layout='fill' objectFit="cover" />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="swiper-img-container">
-                <Image src={images.white4} alt="image" layout='fill' objectFit="cover" />
+                <Image src={images.black4} alt="image" layout='fill' objectFit="cover" />
               </div>
             </SwiperSlide>
 
@@ -80,25 +80,25 @@ export default function Home() {
           >
             <SwiperSlide>
               <div className="swiper-img-container">
-                <Image src={images.black1} alt="image" layout='fill' objectFit="cover" />
+                <Image src={images.white1} alt="image" layout='fill' objectFit="cover" />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="swiper-img-container">
-                <Image src={images.black2} alt="image" layout='fill' objectFit="cover" />
+                <Image src={images.white2} alt="image" layout='fill' objectFit="cover" />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="swiper-img-container">
-                <Image src={images.black3} alt="image" layout='fill' objectFit="cover" />
+                <Image src={images.white3} alt="image" layout='fill' objectFit="cover" />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="swiper-img-container">
-                <Image src={images.black4} alt="image" layout='fill' objectFit="cover" />
+                <Image src={images.white4} alt="image" layout='fill' objectFit="cover" />
               </div>
             </SwiperSlide>
 
